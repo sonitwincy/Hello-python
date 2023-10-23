@@ -1,0 +1,25 @@
+Example_string = "Hello string"
+
+print(Example_string) 
+
+# printing the value of variable 
+
+print(type(Example_string)) 
+
+# printing the type of variable 
+
+print(Example_string[0])
+
+#printing the first character of the string
+
+print(Example_string[-1])
+
+#printing the last character of the string
+
+print(Example_string[:5])
+
+#printing the first 5 character of the string 
+
+print(Example_string[5:])
+
+#printing the characters from 5th index to the end of the string 
