@@ -1,0 +1,22 @@
+myset = {11,33} 
+
+#Creating a set
+
+print(myset)
+
+#printing set
+
+myset.add(22)
+
+#Adding an element 
+print(myset)
+
+#printing set after insertim
+
+myset.remove(11)
+
+#Deleting an element 
+
+print(myset)
+
+#printing set after deletion
