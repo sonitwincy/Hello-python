@@ -1,0 +1,7 @@
+Example_list = [11,"Python",92.3,True] # Lists are used to store multiple items in a single variable.
+
+print(Example_list) #    printing  the list in python
+
+print(Example_list[0]) #   printing  the list  index 0 in python
+
+print(Example_list[1:4]) #   s.icing the list
