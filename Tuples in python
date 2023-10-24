@@ -1,0 +1,35 @@
+Example_tuple=(45,"python",78.20)  
+
+#creating a Tuple
+
+print(Example_tuple) 
+
+#printing  the tuple
+
+print(Example_tuple[2])
+
+#printing the index 2 of the tuple
+
+print(Example_tuple[-1])
+
+#printing the last index of the tuple
+
+print(Example_tuple[-2])
+
+#printing the second last index of the tuple
+
+print(Example_tuple[ : 2])
+
+#printing the first two indexes of the tuple
+
+print(Example_tuple[ : ])
+
+#prnting the fist two indexes of the tuple
+
+print(Example_tuple[ : -1])
+
+#printing the first index of the tuple
+
+print(Example_tuple[0:1])
+
+#slicin the list 
