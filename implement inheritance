@@ -1,0 +1,14 @@
+class Base:
+  def __init__(self):
+      self.name = "Lena Headey"
+
+  def display(self):
+      print(self.name)
+
+class Derived(Base):  # Inherit from class Base
+  def disp(self):
+      print("Derived class")
+
+o = Derived()  # Create an object of the Derived class
+o.display()  # Call the Base class method 'display'
+o.disp()  # Call the Derived class method 'disp'
