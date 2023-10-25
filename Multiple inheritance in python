@@ -1,0 +1,40 @@
+# Define the first base class, Base1
+class Base1:
+    # Constructor for Base1 class
+    def __init__(self):
+        self.name = "Aegon Targaryen"
+
+    # Method to display the 'name' attribute
+    def display(self):
+        print(self.name)
+
+# Define the second base class, Base2
+class Base2:
+    # Method to initialize the 'n' attribute
+    def initialize(self):
+        self.n = "Daenerys Targaryen"
+
+    # Method to display the 'n' attribute
+    def disp(self):
+        print(self.n)
+
+# Define the derived class, Derived, which inherits from Base1 and Base2
+class Derived(Base1, Base2):
+    # Method specific to the Derived class
+    def show(self):
+        print("I have two base classes")
+
+# Create an instance of the Derived class
+o = Derived()
+
+# Initialize the 'n' attribute in the Base2 class
+o.initialize()
+
+# Call the 'show' method from the Derived class
+o.show()
+
+# Call the 'display' method from the Base1 class
+o.display()
+
+# Call the 'disp' method from the Base2 class
+o.disp()
