@@ -1,0 +1,52 @@
+# Define the base class 'Base'
+class Base:
+    def __init__(self):
+        # Initialize the 'name' attribute with a default value
+        self.name = "Nathalie Emmanule"
+
+    def display(self):
+        # Display the 'name' attribute
+        print(self.name)
+
+# Define 'Derived1' class, which inherits from 'Base'
+class Derived1(Base):
+    def disp(self):
+        # Method specific to 'Derived1'
+        print("My base class is Base")
+
+# Define 'Derived2' class, which also inherits from 'Base'
+class Derived2(Base):
+    def showmessage(self):
+        # Method specific to 'Derived2'
+        print("My Base class is Base")
+
+# Define 'Derived3' class, which inherits from 'Derived1'
+class Derived3(Derived1):
+    def showmessage(self):
+        # Method specific to 'Derived3', overrides the 'showmessage' method from 'Derived1'
+        print("My base class is Derived1")
+
+# Define 'Derived4' class, which also inherits from 'Derived1'
+class Derived4(Derived1):
+    def dispmy(self):
+        # Method specific to 'Derived4'
+        print("My base class is Derived1")
+
+# Create instances of the classes
+o1 = Derived4()  # An instance of 'Derived4'
+o2 = Derived3()  # An instance of 'Derived3'
+o3 = Derived2()  # An instance of 'Derived2'
+
+# Use the methods and attributes of the instances
+o1.display()  # Calls the 'display' method from 'Base'
+o1.disp()     # Calls the 'disp' method from 'Derived1'
+o1.dispmy()   # Calls the 'dispmy' method from 'Derived4'
+
+o2.name = "Emilia Clarke"  # Update the 'name' attribute for o2
+o2.display()               # Calls the 'display' method from 'Base'
+o2.disp()                  # Calls the 'disp' method from 'Derived1'
+o2.showmessage()           # Calls the 'showmessage' method from 'Derived3'
+
+o3.name = "Maisie Williams"  # Update the 'name' attribute for o3
+o3.display()                 # Calls the 'display' method from 'Base'
+o3.showmessage()            # Calls the 'showmessage' method from 'Derived2' (base class)
