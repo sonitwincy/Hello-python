@@ -1,0 +1,41 @@
+# Define the `Basel` class
+class Basel:
+    # Constructor for the `Basel` class
+    def __init__(self):
+        self.name = "Lena Headey"
+
+    # Method to display the `name` attribute
+    def display(self):
+        print(self.name)
+
+# Define the `Derived` class, which inherits from `Basel`
+class Derived(Basel):
+    # Method specific to the `Derived` class
+    def disp(self):
+        print("Derived method of Basel")
+
+# Define the `Base2` class
+class Base2:
+    # Constructor for the `Base2` class
+    def __init__(self):
+        self.name = "Rose Leslie"
+
+    # Method to show the `name` attribute
+    def show(self):
+        print(self.name)
+
+# Define the `Derived2` class, which inherits from `Base2`
+class Derived2(Base2):
+    # Method specific to the `Derived2` class
+    def showmessage(self):
+        print("Derived method of Base2")
+
+# Create instances of `Derived` and `Derived2` classes
+o1 = Derived()
+o2 = Derived2()
+
+# Call methods on the instances
+o1.display()
+o1.disp()
+o2.show()
+o2.showmessage()
