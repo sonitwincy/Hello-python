@@ -1,0 +1,23 @@
+# Comment 1: There's a typo in the class name 'base' should be 'Base'.
+class Base:
+    # Comment 2: In Python, methods should be properly indented within the class.
+    def show(self):
+        print("Base class method")
+
+    def disp(self):
+        print("Winter is coming")
+
+# Comment 3: There's a typo in the class name 'base' should be 'Base'.
+# Comment 4: In Python, classes should start with an uppercase letter (e.g., 'Derived' instead of 'Derived').
+class Derived(Base):
+    def show(self):
+        print("Derived class Method")
+
+    # Comment 5: The 'disp' method should be properly indented within the class.
+    def disp(self):
+        print("A Lannister always pays his debts")
+
+# Comment 6: The 'obj' object creation and method calls should be outside the class definitions.
+obj = Derived()
+obj.show()
+obj.disp()
