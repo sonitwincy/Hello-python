@@ -1,0 +1,15 @@
+class Base:
+  def __init__(self):  # Added space after "def"
+      self.s = "A song of Ice and Fire"
+
+  def show(self):
+      print(self.s)
+
+# Indentation corrected, and the Derived class is now defined outside the Base class.
+class Derived(Base):
+  def disp(self):
+      print("Chaos is a ladder")  # Removed extra space
+
+obj = Derived()
+obj.show()
+obj.disp()
