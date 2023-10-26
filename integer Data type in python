@@ -1,0 +1,26 @@
+# Assign the value 1 to the variable x
+x = 1
+
+# Assign a very large integer to the variable y
+y = 35656222554887711
+
+# Assign a negative integer to the variable z
+z = -3255522
+
+# Print the data type of variable x
+print(type(x))
+
+# Print the data type of variable y
+print(type(y))
+
+# Print the data type of variable z
+print(type(z))
+
+# Print the value of variable x
+print(x)
+
+# Print the value of variable y
+print(y)
+
+# Print the value of variable z
+print(z)
