@@ -1,0 +1,21 @@
+class Base:
+  def __init__(self):
+      self.s = "A song of Ice and Fire"
+
+  def show(self):
+      print(self.s)
+
+class Derived(Base):
+  def __init__(self):
+      super().__init__()  # Call the base class constructor
+      self.n = "chaos is a ladder"
+
+  def disp(self):
+      print(self.n)
+
+# Create an object of the Derived class
+obj = Derived()
+
+# Call the methods on the object
+obj.disp()
+obj.show()
