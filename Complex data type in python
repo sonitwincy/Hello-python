@@ -1,0 +1,14 @@
+# Assigning complex numbers to variables
+x = 3 + 5j  # Assigning the complex number 3 + 5j to variable x
+y = 5j     # Assigning the complex number 5j to variable y
+z = -5j    # Assigning the complex number -5j to variable z
+
+# Printing the types of variables
+print(type(x))  # Printing the data type of x
+print(type(y))  # Printing the data type of y
+print(type(z))  # Printing the data type of z
+
+# Printing the values of variables
+print(x)  # Printing the value of x
+print(y)  # Printing the value of y
+print(z)  # Printing the value of z
