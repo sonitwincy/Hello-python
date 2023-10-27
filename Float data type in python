@@ -1,0 +1,14 @@
+# Assigning values to variables
+x = 1.10  # Assigning the value 1.10 to variable x
+y = 1.0   # Assigning the value 1.0 to variable y
+z = -35.59  # Assigning the value -35.59 to variable z
+
+# Printing the types of variables
+print(type(x))  # Printing the data type of x
+print(type(y))  # Printing the data type of y
+print(type(z))  # Printing the data type of z
+
+# Printing the values of variables
+print(x)  # Printing the value of x
+print(y)  # Printing the value of y
+print(z)  # Printing the value of z
