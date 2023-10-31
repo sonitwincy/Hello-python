@@ -1,0 +1,17 @@
+# Import the tkinter library
+from tkinter import *
+
+# Create the main application window
+root = Tk()
+
+# Create and display a button with white background and black text
+Button(root, text="white", bg="white", fg="black").pack()
+
+# Create and display a button with orange background and brown text
+Button(root, text="orange", bg="orange", fg="brown").pack()
+
+# Create and display a button with red background and black text
+Button(root, text="Red", bg="red", fg="black").pack()
+
+# Start the main event loop to keep the application running
+mainloop()
