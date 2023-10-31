@@ -1,0 +1,18 @@
+# Import the tkinter library, which is used to create GUI applications
+from tkinter import *
+
+# Create the main application window
+root = Tk()
+
+# Create a white button with the text "white", a white background, and black text
+Button(root, text="white", bg="white", fg="black").pack(fill=X, padx=15)
+
+# Create an orange button with the text "orange", an orange background, and brown text
+# The pack method is used to organize and display the button with padding
+Button(root, text="orange", bg="orange", fg="brown").pack(fill=X, pady=15, padx=15)
+
+# Create a red button with the text "Red", a red background, and black text
+Button(root, text="Red", bg="red", fg="black").pack(fill=X, padx=15)
+
+# Start the tkinter main event loop, which listens for user interactions
+mainloop()
