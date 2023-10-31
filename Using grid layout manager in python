@@ -1,0 +1,23 @@
+# Import the tkinter library
+from tkinter import *
+
+# Define a list with field labels
+fields = ['Name', 'Country', 'Contact', 'Parentage', 'District', 'Address']
+
+# Create the main tkinter window
+root = Tk(className="Layout")
+
+# Initialize a variable to keep track of the row number in the grid
+i = 0
+
+# Loop through the fields and create labels and entry widgets
+for field in fields:
+  Label(root, text=field, width=10).grid(row=i, column=0)
+  Entry(root, width=20).grid(row=i, column=1)
+  i += 1
+
+# Create a Submit button (this was missing in your original code)
+Button(root, text="Submit", width=17).grid(row=i, column=1)
+
+# Start the tkinter main loop
+root.mainloop()
