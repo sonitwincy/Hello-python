@@ -1,0 +1,17 @@
+# Import the tkinter library
+from tkinter import *
+
+# Create the main application window
+root = Tk(className="Layout")
+
+# Create a white button with specified text and colors, and place it on the window
+Button(root, text="white", bg="white", fg="black").place(x=20, y=30, width=160, height=30)
+
+# Create an orange button with specified text and colors, and place it on the window
+Button(root, text="orange", bg="orange", fg="brown").place(x=20, y=70, width=160, height=30)
+
+# Create a red button with specified text and colors, and place it on the window
+Button(root, text="Red", bg="red", fg="black").place(x=20, y=110, width=160, height=30)
+
+# Start the tkinter main loop to display the window and handle events
+root.mainloop()
