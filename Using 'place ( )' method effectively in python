@@ -1,0 +1,41 @@
+# Import the tkinter and random modules
+import tkinter
+import random
+
+# Create a tkinter window with the title "Layout"
+root = tkinter.Tk(className="Layout")
+
+# Set the initial size and position of the window
+root.geometry("200x250+50+30")
+
+# Create a list of programming languages
+lang = ['Python', 'Ruby', 'C#', 'JavaScript', 'PHP']
+
+# Initialize a loop counter
+i = 0
+
+# Loop to create buttons for each programming language
+while i < 5:
+    # Generate a list of three random integers between 0 and 255 to represent a color
+    C = [random.randrange(256) for x in range(3)]
+
+    # Convert the RGB color values to a hexadecimal format
+    ct_hex = "%02x%02x%02x" % tuple(C)
+
+    # Calculate the brightness of the color
+    bright = int(round(0.8 * C[0] + 0.01 * C[1] + 0.2 * C[2]))
+
+    # Create a background color using the hexadecimal format
+    bg_colour = '#' + "".join(ct_hex)
+
+    # Create a button with the programming language as text, and set text and background colors
+    b = tkinter.Button(root, text=lang[i], fg='White' if bright < 100 else 'Black', bg=bg_colour)
+
+    # Position and size the button
+    b.place(x=40, y=30 + i * 40, width=120, height=25)
+
+    # Increment the loop counter
+    i += 1
+
+# Start the tkinter main event loop
+root.mainloop()
