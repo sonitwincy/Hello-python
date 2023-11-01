@@ -1,0 +1,25 @@
+# Import the necessary modules from the tkinter library
+from tkinter import *
+from tkinter.filedialog import askopenfilename
+
+# Define a function to handle the file open dialog
+def handler():
+    # Use the askopenfilename function to display a file open dialog
+    # and store the selected file's path in a variable
+    selected_file = askopenfilename()
+
+    # Print the selected file's path to the console
+    print(selected_file)
+
+# Create the main application window
+root = Tk(className="File open dialog")
+
+# Set the initial window size
+root.geometry('250x30')
+
+# Create a button with the label 'Open file' that triggers the 'handler' function
+Button(text='Open file', command=handler).pack()
+
+# Start the main event loop to run the application
+root.mainloop()
+
