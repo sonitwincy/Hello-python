@@ -1,0 +1,8 @@
+# Assigning values to variables
+a = 33
+b = 200
+
+# Checking if the value of b is greater than the value of a
+if b > a:
+    # Printing a message if the condition is true
+    print("b is greater than a")
