@@ -1,0 +1,10 @@
+# Setting the variable 'marks' to a value of 33
+marks = 33
+
+# Checking if the value of 'marks' is greater than or equal to 33
+if marks >= 33:
+  # If the condition is true, print the following message
+  print("Student has passed the examination")
+else:
+  # If the condition is false, print the following message
+  print("Student has failed the examination")
