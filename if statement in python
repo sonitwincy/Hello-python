@@ -1,0 +1,10 @@
+# Define a variable named Number and assign it the value 76
+Number = 76
+
+# Check if the value of Number is greater than 25
+if Number > 25:
+  # If the condition is true, execute the following block of code
+  print("Number is greater than 25")
+# The block of code inside the if statement is indented, indicating it belongs to the if statement
+
+# The code outside the if statement is not indented, indicating it is not part of the if statement
